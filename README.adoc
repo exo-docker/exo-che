@@ -1,4 +1,4 @@
-= eXo Developement with Che
+= eXo Development with Che
 // URIs:
 :uri-project-repo: https://github.com/exo-docker/exo-che
 :repo-base-uri: {uri-project-repo}/blob/master/
