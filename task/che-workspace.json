@@ -178,7 +178,7 @@
           "name": "ws-machine",
           "type": "docker",
           "source": {
-            "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/task/Dockerfile",
+            "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/base-che/Dockerfile",
             "type": "dockerfile"
           },
           "dev": true,
@@ -359,7 +359,7 @@
         "name": "ws-machine",
         "type": "docker",
         "source": {
-          "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/task/Dockerfile",
+          "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/base-che/Dockerfile",
           "type": "dockerfile"
         },
         "dev": true,
@@ -403,7 +403,7 @@
             "name": "ws-machine",
             "type": "docker",
             "source": {
-              "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/task/Dockerfile",
+              "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/base-che/Dockerfile",
               "type": "dockerfile"
             },
             "dev": true,
@@ -512,8 +512,8 @@
     "name": "exo-addon-che",
     "commands": [
       {
-        "commandLine": "/opt/exo/current/addon install --catalog=file:///etc/exo/catalog.json  exo-tasks:1.1.x-SNAPSHOT --force --batch-mode",
-        "name": "Task - Deploy",
+        "commandLine": "rm -f /opt/exo/current/addons/archives/task*.zip  && mvn -f /projects/task clean package -DskipTests && /opt/exo/current/addon install --catalog=file:///etc/exo/catalog.json  exo-tasks:1.1.x-SNAPSHOT --force --batch-mode",
+        "name": "Task - Build & Install",
         "attributes": {
           "previewUrl": "http://${server.port.8080}/portal/intranet/tasks"
         },
@@ -521,9 +521,17 @@
       },
       {
         "commandLine": "mvn -f ${current.project.path} clean package",
-        "name": "build",
+        "name": "clean package",
         "attributes": {
           "previewUrl": "http://${server.port.8080}/portal"
+        },
+        "type": "mvn"
+      },
+      {
+        "commandLine": "mvn -f ${current.project.path} clean test",
+        "name": "clean test",
+        "attributes": {
+          "previewUrl": ""
         },
         "type": "mvn"
       },
@@ -552,15 +560,15 @@
         "type": "custom"
       },
       {
-        "commandLine": "rm -f /opt/exo/current/addons/archives/*.zip  && mvn -f   ${current.project.path} clean package -DskipTests && /opt/exo/current/addon install --catalog=file:///etc/exo/catalog.json  exo-tasks:1.1.x-SNAPSHOT --force --batch-mode &&  /opt/exo/current/start_eXo.sh --dev -b",
-        "name": "Task - Build/Install & Start PLF",
+        "commandLine": "rm -f /opt/exo/current/addons/archives/task*.zip  && mvn -f /projects/task clean package -DskipTests && /opt/exo/current/addon install --catalog=file:///etc/exo/catalog.json  exo-tasks:1.1.x-SNAPSHOT --force --batch-mode &&  /opt/exo/current/start_eXo.sh --dev -b",
+        "name": "Task - Build & Install & Start PLF",
         "attributes": {
           "previewUrl": "http://${server.port.8080}/portal"
         },
         "type": "custom"
       },
       {
-        "commandLine": "/opt/exo/current/stop_eXo.sh -force && echo \"eXo PLF Stopped!\"",
+        "commandLine": "/opt/exo/current/stop_eXo.sh 15 -force && echo \"eXo PLF Stopped!\"",
         "name": "eXo PLF - Stop",
         "attributes": {
           "previewUrl": ""
