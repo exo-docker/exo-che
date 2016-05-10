@@ -23,10 +23,12 @@ RUN echo "exo   ALL = NOPASSWD: ALL" > /etc/sudoers.d/exo && chmod 440 /etc/sudo
 
 # Install some useful or needed tools
 ## Che Customization: Add git
-RUN add-apt-repository ppa:git-core/ppa && \
-  apt-get -qq update && \
+RUN apt-get -qq update && \
   apt-get -qq -y upgrade ${_APT_OPTIONS} && \
   apt-get -qq -y install ${_APT_OPTIONS} libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer && \
+  add-apt-repository ppa:git-core/ppa && \
+  apt-get update && \
+  sudo apt-get install git -y && \
   apt-get -qq -y autoremove && \
   apt-get -qq -y clean && \
   rm -rf /var/lib/apt/lists/*
@@ -77,7 +79,7 @@ RUN mkdir -p /home/${EXO_USER}/.m2/repository && chown ${EXO_USER}:${EXO_USER} /
     curl -L -o /home/${EXO_USER}/.m2/settings.xml https://raw.githubusercontent.com/exo-docker/exo-che/master/base-exo-che/m2-settings.xml && \
     chown ${EXO_USER}:${EXO_USER} /home/${EXO_USER}/.m2/settings.xml && \
     curl -L -o ${EXO_CONF_DIR}/exo.properties https://raw.githubusercontent.com/exo-docker/exo-che/master/base-exo-che/exo-sample.properties && \
-    chown ${EXO_USER}:${EXO_USER} ${EXO_CONF_DIR}/exo.properties 
+    chown ${EXO_USER}:${EXO_USER} ${EXO_CONF_DIR}/exo.properties
 
 USER ${CHE_USER}
 
