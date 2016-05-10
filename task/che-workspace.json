@@ -1,0 +1,629 @@
+{
+  "attributes": {
+    "updated": "1462874577086",
+    "created": "1462804431870"
+  },
+  "namespace": "che",
+  "temporary": false,
+  "id": "workspacedp4p0xtj1swdjmf4",
+  "status": "RUNNING",
+  "runtime": {
+    "machines": [
+      {
+        "links": [],
+        "envName": "wksp-ubmv",
+        "id": "machine5jq4obo6s97xvktv",
+        "status": "RUNNING",
+        "owner": "che",
+        "runtime": {
+          "properties": {
+            "hostConfig.binds": "[/home/vagrant/eclipse-che-4.2.0/lib/linux_amd64/terminal:/mnt/che/terminal:ro,Z, /home/vagrant/eclipse-che-4.2.0/lib/ws-agent.zip:/mnt/che/ws-agent.zip:ro,Z, /home/vagrant/eclipse-che-4.2.0/workspaces/exo-addon-che:/projects:Z]",
+            "hostConfig.dnsSearch": "[]",
+            "network.bridge": "",
+            "hostConfig.volumesFrom": "[]",
+            "config.image": "eclipse-che/che_workspacedp4p0xtj1swdjmf4_ws-machine_s3oww",
+            "hostConfig.ipcMode": "",
+            "state.paused": "false",
+            "hostConfig.logConfig": "LogConfig{type='json-file', config={}}",
+            "resolvConfPath": "/var/lib/docker/containers/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a/resolv.conf",
+            "config.networkDisabled": "false",
+            "config.openStdin": "false",
+            "path": "/bin/sh",
+            "network.globalIPv6Address": "",
+            "hostConfig.memory": "4194304000",
+            "state.dead": "false",
+            "network.linkLocalIPv6Address": "",
+            "hostConfig.extraHosts": "[che-host:172.17.0.1]",
+            "hostConfig.cgroupParent": "",
+            "network.globalIPv6PrefixLen": "0",
+            "hostConfig.cpuShares": "0",
+            "id": "afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a",
+            "config.securityOpts": "null",
+            "image": "sha256:cb096490efffb611620384a23081dd5564a5d0c2d9405ba268e3896c3dc5d2c8",
+            "hostConfig.ulimits": "null",
+            "config.exposedPorts": "{4401/tcp={}, 8080/tcp={}, 22/tcp={}, 4403/tcp={}, 4411/tcp={}, 9876/tcp={}, 8000/tcp={}}",
+            "created": "2016-05-10T07:13:15.146118805Z",
+            "volumes": "{}",
+            "hostConfig.links": "[]",
+            "config.user": "exo",
+            "hostConfig.cpusetCpus": "",
+            "hostConfig.pidMode": "",
+            "config.tty": "false",
+            "driver": "devicemapper",
+            "config.volumes": "{/srv/exo={}, /var/log/exo={}}",
+            "state.pid": "5061",
+            "name": "/che_workspacedp4p0xtj1swdjmf4_ws-machine_s3oww",
+            "config.labels": "{}",
+            "volumesRW": "{}",
+            "hostConfig.devices": "[]",
+            "config.hostname": "afff08990c9d",
+            "config.env": "[CHE_LOCAL_CONF_DIR=/mnt/che/conf, CHE_API_ENDPOINT=http://che-host:8080/ide/api, CHE_PROJECTS_ROOT=/projects, CHE_WORKSPACE_ID=workspacedp4p0xtj1swdjmf4, USER_TOKEN=dummy_token, PATH=/usr/lib/jvm/java-1.8.0-oracle-x64/bin:/home/user/apache-maven-3.2.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, TERM=xterm, JDK_VERSION_MAJOR=8, JDK_VERSION_UPDATE=92, JDK_VERSION_BUILD=b14, JDK_VERSION=8u92, JDK_VERSION_DOT=1.8.0, JDK_VERSION_DOT_UPDATE=1.8.0_92, JDK_DOWNLOAD=http://download.oracle.com/otn-pub/java/jdk/8u92-b14/jdk-8u92-linux-x64.tar.gz, DEBIAN_FRONTEND=noninteractive, _APT_OPTIONS=-o Dpkg::Options::=--force-confdef -o Dpkg::Options::=--force-confold, DOWNLOAD_DIR=/srv/downloads, JVM_DIR=/usr/lib/jvm, JAVA_HOME=/usr/lib/jvm/java-1.8.0-oracle-x64, EXO_VERSION=4.3.0, EXO_EDITION=community, EXO_DOWNLOAD=http://sourceforge.net/projects/exo/files/Platform4.3/eXo-Platform-community-4.3.0.zip/download, EXO_APP_DIR=/opt/exo, EXO_CONF_DIR=/etc/exo, EXO_DATA_DIR=/srv/exo, EXO_LOG_DIR=/var/log/exo, EXO_TMP_DIR=/tmp/exo-tmp, EXO_USER=exo, EXO_GROUP=exo, CHE_USER=user, CHE_GROUP=exo, MAVEN_VERSION=3.2.5, M2_HOME=/home/user/apache-maven-3.2.5, LANG=C.UTF-8]",
+            "state.exitCode": "0",
+            "appArmorProfile": "",
+            "restartCount": "0",
+            "config.attachStdin": "false",
+            "state.startedAt": "2016-05-10T07:13:15.792116199Z",
+            "state.restarting": "false",
+            "config.stdinOnce": "false",
+            "state.running": "true",
+            "hostConfig.containerIDFile": "",
+            "mountLabel": "",
+            "config.cpuShares": "0",
+            "config.attachStderr": "false",
+            "logPath": "/var/lib/docker/containers/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a-json.log",
+            "network.portMappings": "null",
+            "hostsPath": "/var/lib/docker/containers/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a/hosts",
+            "hostConfig.capDrop": "[]",
+            "network.macAddress": "02:42:ac:11:00:03",
+            "hostConfig.restartPolicy": "RestartPolicy{name='', maximumRetryCount=0}",
+            "state.OOMKilled": "false",
+            "config.attachStdout": "false",
+            "network.iPv6Gateway": "",
+            "network.ports": "{4401/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32806'}], 8080/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32802'}], 22/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32807'}], 4403/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32805'}], 4411/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32804'}], 9876/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32801'}], 8000/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32803'}]}",
+            "hostConfig.networkMode": "default",
+            "network.gateway": "172.17.0.1",
+            "network.ipPrefixLen": "0",
+            "config.workingDir": "",
+            "hostConfig.dns": "[]",
+            "args": "[-c, sudo /usr/sbin/sshd -D && tail -f /dev/null]",
+            "config.cmd": "[/bin/sh, -c, sudo /usr/sbin/sshd -D && tail -f /dev/null]",
+            "network.linkLocalIPv6PrefixLen": "0",
+            "hostConfig.portBindings": "{}",
+            "state.finishedAt": "0001-01-01T00:00:00Z",
+            "hostConfig.lxcConf": "null",
+            "hostConfig.memorySwap": "-1",
+            "state.error": "",
+            "processLabel": "",
+            "hostConfig.capAdd": "[]",
+            "hostnamePath": "/var/lib/docker/containers/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a/hostname"
+          },
+          "servers": {
+            "4401/tcp": {
+              "url": "http://192.168.28.30:32806/api/ext",
+              "ref": "wsagent",
+              "path": "/api/ext",
+              "address": "192.168.28.30:32806",
+              "protocol": "http"
+            },
+            "8080/tcp": {
+              "ref": "Server-8080-tcp",
+              "address": "192.168.28.30:32802"
+            },
+            "22/tcp": {
+              "ref": "Server-22-tcp",
+              "address": "192.168.28.30:32807"
+            },
+            "9876/tcp": {
+              "ref": "Server-9876-tcp",
+              "address": "192.168.28.30:32801"
+            },
+            "4411/tcp": {
+              "url": "http://192.168.28.30:32804",
+              "ref": "terminal",
+              "address": "192.168.28.30:32804",
+              "protocol": "http"
+            },
+            "4403/tcp": {
+              "url": "http://192.168.28.30:32805",
+              "ref": "wsagent.debug",
+              "address": "192.168.28.30:32805",
+              "protocol": "http"
+            },
+            "8000/tcp": {
+              "ref": "Server-8000-tcp",
+              "address": "192.168.28.30:32803"
+            }
+          },
+          "envVariables": {
+            "PATH": "/usr/lib/jvm/java-1.8.0-oracle-x64/bin:/home/user/apache-maven-3.2.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "EXO_LOG_DIR": "/var/log/exo",
+            "_APT_OPTIONS": "-o Dpkg::Options::=--force-confdef -o Dpkg::Options::=--force-confold",
+            "USER_TOKEN": "dummy_token",
+            "JAVA_HOME": "/usr/lib/jvm/java-1.8.0-oracle-x64",
+            "CHE_PROJECTS_ROOT": "/projects",
+            "TERM": "xterm",
+            "EXO_GROUP": "exo",
+            "LANG": "C.UTF-8",
+            "EXO_EDITION": "community",
+            "EXO_DATA_DIR": "/srv/exo",
+            "CHE_GROUP": "exo",
+            "JVM_DIR": "/usr/lib/jvm",
+            "EXO_CONF_DIR": "/etc/exo",
+            "JDK_VERSION_UPDATE": "92",
+            "JDK_VERSION_MAJOR": "8",
+            "EXO_VERSION": "4.3.0",
+            "EXO_DOWNLOAD": "http://sourceforge.net/projects/exo/files/Platform4.3/eXo-Platform-community-4.3.0.zip/download",
+            "EXO_USER": "exo",
+            "MAVEN_VERSION": "3.2.5",
+            "JDK_VERSION_BUILD": "b14",
+            "JDK_VERSION_DOT": "1.8.0",
+            "JDK_VERSION": "8u92",
+            "EXO_APP_DIR": "/opt/exo",
+            "JDK_VERSION_DOT_UPDATE": "1.8.0_92",
+            "CHE_LOCAL_CONF_DIR": "/mnt/che/conf",
+            "DEBIAN_FRONTEND": "noninteractive",
+            "JDK_DOWNLOAD": "http://download.oracle.com/otn-pub/java/jdk/8u92-b14/jdk-8u92-linux-x64.tar.gz",
+            "EXO_TMP_DIR": "/tmp/exo-tmp",
+            "M2_HOME": "/home/user/apache-maven-3.2.5",
+            "CHE_API_ENDPOINT": "http://che-host:8080/ide/api",
+            "CHE_WORKSPACE_ID": "workspacedp4p0xtj1swdjmf4",
+            "CHE_USER": "user",
+            "DOWNLOAD_DIR": "/srv/downloads"
+          }
+        },
+        "config": {
+          "limits": {
+            "ram": 4000
+          },
+          "name": "ws-machine",
+          "type": "docker",
+          "source": {
+            "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/task/Dockerfile",
+            "type": "dockerfile"
+          },
+          "dev": true,
+          "servers": [],
+          "envVariables": {},
+          "links": []
+        },
+        "workspaceId": "workspacedp4p0xtj1swdjmf4"
+      }
+    ],
+    "activeEnv": "wksp-ubmv",
+    "devMachine": {
+      "links": [],
+      "envName": "wksp-ubmv",
+      "id": "machine5jq4obo6s97xvktv",
+      "status": "RUNNING",
+      "owner": "che",
+      "runtime": {
+        "properties": {
+          "hostConfig.binds": "[/home/vagrant/eclipse-che-4.2.0/lib/linux_amd64/terminal:/mnt/che/terminal:ro,Z, /home/vagrant/eclipse-che-4.2.0/lib/ws-agent.zip:/mnt/che/ws-agent.zip:ro,Z, /home/vagrant/eclipse-che-4.2.0/workspaces/exo-addon-che:/projects:Z]",
+          "hostConfig.dnsSearch": "[]",
+          "network.bridge": "",
+          "hostConfig.volumesFrom": "[]",
+          "config.image": "eclipse-che/che_workspacedp4p0xtj1swdjmf4_ws-machine_s3oww",
+          "hostConfig.ipcMode": "",
+          "state.paused": "false",
+          "hostConfig.logConfig": "LogConfig{type='json-file', config={}}",
+          "resolvConfPath": "/var/lib/docker/containers/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a/resolv.conf",
+          "config.networkDisabled": "false",
+          "config.openStdin": "false",
+          "path": "/bin/sh",
+          "network.globalIPv6Address": "",
+          "hostConfig.memory": "4194304000",
+          "state.dead": "false",
+          "network.linkLocalIPv6Address": "",
+          "hostConfig.extraHosts": "[che-host:172.17.0.1]",
+          "hostConfig.cgroupParent": "",
+          "network.globalIPv6PrefixLen": "0",
+          "hostConfig.cpuShares": "0",
+          "id": "afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a",
+          "config.securityOpts": "null",
+          "image": "sha256:cb096490efffb611620384a23081dd5564a5d0c2d9405ba268e3896c3dc5d2c8",
+          "hostConfig.ulimits": "null",
+          "config.exposedPorts": "{4401/tcp={}, 8080/tcp={}, 22/tcp={}, 4403/tcp={}, 4411/tcp={}, 9876/tcp={}, 8000/tcp={}}",
+          "created": "2016-05-10T07:13:15.146118805Z",
+          "volumes": "{}",
+          "hostConfig.links": "[]",
+          "config.user": "exo",
+          "hostConfig.cpusetCpus": "",
+          "hostConfig.pidMode": "",
+          "config.tty": "false",
+          "driver": "devicemapper",
+          "config.volumes": "{/srv/exo={}, /var/log/exo={}}",
+          "state.pid": "5061",
+          "name": "/che_workspacedp4p0xtj1swdjmf4_ws-machine_s3oww",
+          "config.labels": "{}",
+          "volumesRW": "{}",
+          "hostConfig.devices": "[]",
+          "config.hostname": "afff08990c9d",
+          "config.env": "[CHE_LOCAL_CONF_DIR=/mnt/che/conf, CHE_API_ENDPOINT=http://che-host:8080/ide/api, CHE_PROJECTS_ROOT=/projects, CHE_WORKSPACE_ID=workspacedp4p0xtj1swdjmf4, USER_TOKEN=dummy_token, PATH=/usr/lib/jvm/java-1.8.0-oracle-x64/bin:/home/user/apache-maven-3.2.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, TERM=xterm, JDK_VERSION_MAJOR=8, JDK_VERSION_UPDATE=92, JDK_VERSION_BUILD=b14, JDK_VERSION=8u92, JDK_VERSION_DOT=1.8.0, JDK_VERSION_DOT_UPDATE=1.8.0_92, JDK_DOWNLOAD=http://download.oracle.com/otn-pub/java/jdk/8u92-b14/jdk-8u92-linux-x64.tar.gz, DEBIAN_FRONTEND=noninteractive, _APT_OPTIONS=-o Dpkg::Options::=--force-confdef -o Dpkg::Options::=--force-confold, DOWNLOAD_DIR=/srv/downloads, JVM_DIR=/usr/lib/jvm, JAVA_HOME=/usr/lib/jvm/java-1.8.0-oracle-x64, EXO_VERSION=4.3.0, EXO_EDITION=community, EXO_DOWNLOAD=http://sourceforge.net/projects/exo/files/Platform4.3/eXo-Platform-community-4.3.0.zip/download, EXO_APP_DIR=/opt/exo, EXO_CONF_DIR=/etc/exo, EXO_DATA_DIR=/srv/exo, EXO_LOG_DIR=/var/log/exo, EXO_TMP_DIR=/tmp/exo-tmp, EXO_USER=exo, EXO_GROUP=exo, CHE_USER=user, CHE_GROUP=exo, MAVEN_VERSION=3.2.5, M2_HOME=/home/user/apache-maven-3.2.5, LANG=C.UTF-8]",
+          "state.exitCode": "0",
+          "appArmorProfile": "",
+          "restartCount": "0",
+          "config.attachStdin": "false",
+          "state.startedAt": "2016-05-10T07:13:15.792116199Z",
+          "state.restarting": "false",
+          "config.stdinOnce": "false",
+          "state.running": "true",
+          "hostConfig.containerIDFile": "",
+          "mountLabel": "",
+          "config.cpuShares": "0",
+          "config.attachStderr": "false",
+          "logPath": "/var/lib/docker/containers/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a-json.log",
+          "network.portMappings": "null",
+          "hostsPath": "/var/lib/docker/containers/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a/hosts",
+          "hostConfig.capDrop": "[]",
+          "network.macAddress": "02:42:ac:11:00:03",
+          "hostConfig.restartPolicy": "RestartPolicy{name='', maximumRetryCount=0}",
+          "state.OOMKilled": "false",
+          "config.attachStdout": "false",
+          "network.iPv6Gateway": "",
+          "network.ports": "{4401/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32806'}], 8080/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32802'}], 22/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32807'}], 4403/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32805'}], 4411/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32804'}], 9876/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32801'}], 8000/tcp=[PortBinding{hostIp='0.0.0.0', hostPort='32803'}]}",
+          "hostConfig.networkMode": "default",
+          "network.gateway": "172.17.0.1",
+          "network.ipPrefixLen": "0",
+          "config.workingDir": "",
+          "hostConfig.dns": "[]",
+          "args": "[-c, sudo /usr/sbin/sshd -D && tail -f /dev/null]",
+          "config.cmd": "[/bin/sh, -c, sudo /usr/sbin/sshd -D && tail -f /dev/null]",
+          "network.linkLocalIPv6PrefixLen": "0",
+          "hostConfig.portBindings": "{}",
+          "state.finishedAt": "0001-01-01T00:00:00Z",
+          "hostConfig.lxcConf": "null",
+          "hostConfig.memorySwap": "-1",
+          "state.error": "",
+          "processLabel": "",
+          "hostConfig.capAdd": "[]",
+          "hostnamePath": "/var/lib/docker/containers/afff08990c9d071a0242368241b35a4f8428547578371b6bfa8311cb5783626a/hostname"
+        },
+        "servers": {
+          "4401/tcp": {
+            "url": "http://192.168.28.30:32806/api/ext",
+            "ref": "wsagent",
+            "path": "/api/ext",
+            "address": "192.168.28.30:32806",
+            "protocol": "http"
+          },
+          "8080/tcp": {
+            "ref": "Server-8080-tcp",
+            "address": "192.168.28.30:32802"
+          },
+          "22/tcp": {
+            "ref": "Server-22-tcp",
+            "address": "192.168.28.30:32807"
+          },
+          "9876/tcp": {
+            "ref": "Server-9876-tcp",
+            "address": "192.168.28.30:32801"
+          },
+          "4411/tcp": {
+            "url": "http://192.168.28.30:32804",
+            "ref": "terminal",
+            "address": "192.168.28.30:32804",
+            "protocol": "http"
+          },
+          "4403/tcp": {
+            "url": "http://192.168.28.30:32805",
+            "ref": "wsagent.debug",
+            "address": "192.168.28.30:32805",
+            "protocol": "http"
+          },
+          "8000/tcp": {
+            "ref": "Server-8000-tcp",
+            "address": "192.168.28.30:32803"
+          }
+        },
+        "envVariables": {
+          "PATH": "/usr/lib/jvm/java-1.8.0-oracle-x64/bin:/home/user/apache-maven-3.2.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "EXO_LOG_DIR": "/var/log/exo",
+          "_APT_OPTIONS": "-o Dpkg::Options::=--force-confdef -o Dpkg::Options::=--force-confold",
+          "USER_TOKEN": "dummy_token",
+          "JAVA_HOME": "/usr/lib/jvm/java-1.8.0-oracle-x64",
+          "CHE_PROJECTS_ROOT": "/projects",
+          "TERM": "xterm",
+          "EXO_GROUP": "exo",
+          "LANG": "C.UTF-8",
+          "EXO_EDITION": "community",
+          "EXO_DATA_DIR": "/srv/exo",
+          "CHE_GROUP": "exo",
+          "JVM_DIR": "/usr/lib/jvm",
+          "EXO_CONF_DIR": "/etc/exo",
+          "JDK_VERSION_UPDATE": "92",
+          "JDK_VERSION_MAJOR": "8",
+          "EXO_VERSION": "4.3.0",
+          "EXO_DOWNLOAD": "http://sourceforge.net/projects/exo/files/Platform4.3/eXo-Platform-community-4.3.0.zip/download",
+          "EXO_USER": "exo",
+          "MAVEN_VERSION": "3.2.5",
+          "JDK_VERSION_BUILD": "b14",
+          "JDK_VERSION_DOT": "1.8.0",
+          "JDK_VERSION": "8u92",
+          "EXO_APP_DIR": "/opt/exo",
+          "JDK_VERSION_DOT_UPDATE": "1.8.0_92",
+          "CHE_LOCAL_CONF_DIR": "/mnt/che/conf",
+          "DEBIAN_FRONTEND": "noninteractive",
+          "JDK_DOWNLOAD": "http://download.oracle.com/otn-pub/java/jdk/8u92-b14/jdk-8u92-linux-x64.tar.gz",
+          "EXO_TMP_DIR": "/tmp/exo-tmp",
+          "M2_HOME": "/home/user/apache-maven-3.2.5",
+          "CHE_API_ENDPOINT": "http://che-host:8080/ide/api",
+          "CHE_WORKSPACE_ID": "workspacedp4p0xtj1swdjmf4",
+          "CHE_USER": "user",
+          "DOWNLOAD_DIR": "/srv/downloads"
+        }
+      },
+      "config": {
+        "limits": {
+          "ram": 4000
+        },
+        "name": "ws-machine",
+        "type": "docker",
+        "source": {
+          "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/task/Dockerfile",
+          "type": "dockerfile"
+        },
+        "dev": true,
+        "servers": [],
+        "envVariables": {},
+        "links": []
+      },
+      "workspaceId": "workspacedp4p0xtj1swdjmf4"
+    },
+    "links": [
+      {
+        "href": "http://192.168.28.30:8080/ide/api/workspace/workspacedp4p0xtj1swdjmf4/runtime",
+        "parameters": [],
+        "rel": "stop workspace",
+        "method": "DELETE"
+      },
+      {
+        "href": "http://192.168.28.30:32806/api/ext",
+        "parameters": [],
+        "rel": "wsagent",
+        "method": "GET"
+      },
+      {
+        "href": "ws://192.168.28.30:32806/api/ext",
+        "parameters": [],
+        "rel": "wsagent.websocket",
+        "method": "GET"
+      }
+    ]
+  },
+  "config": {
+    "defaultEnv": "wksp-ubmv",
+    "environments": [
+      {
+        "name": "wksp-ubmv",
+        "machineConfigs": [
+          {
+            "limits": {
+              "ram": 4000
+            },
+            "name": "ws-machine",
+            "type": "docker",
+            "source": {
+              "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/task/Dockerfile",
+              "type": "dockerfile"
+            },
+            "dev": true,
+            "servers": [],
+            "envVariables": {},
+            "links": [
+              {
+                "href": "ws://192.168.28.30:8080/ide/api/ws/workspacedp4p0xtj1swdjmf4",
+                "parameters": [
+                  {
+                    "required": true,
+                    "name": "channel",
+                    "valid": [],
+                    "defaultValue": "workspacedp4p0xtj1swdjmf4:wksp-ubmv:ws-machine"
+                  }
+                ],
+                "rel": "get machine logs channel",
+                "method": "GET"
+              },
+              {
+                "href": "ws://192.168.28.30:8080/ide/api/ws/workspacedp4p0xtj1swdjmf4",
+                "parameters": [
+                  {
+                    "required": true,
+                    "name": "channel",
+                    "valid": [],
+                    "defaultValue": "machine:status:workspacedp4p0xtj1swdjmf4:ws-machine"
+                  }
+                ],
+                "rel": "get machine status channel",
+                "method": "GET"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "links": [],
+        "name": "task",
+        "attributes": {
+          "maven.artifactId": [
+            "task-management-parent"
+          ],
+          "maven.test.source.folder": [
+            "src/test/java"
+          ],
+          "maven.parent.version": [
+            "6"
+          ],
+          "maven.parent.groupId": [
+            "org.exoplatform.addons"
+          ],
+          "maven.version": [
+            "1.1.x-SNAPSHOT"
+          ],
+          "languageVersion": [
+            "1.8.0_92"
+          ],
+          "language": [
+            "java"
+          ],
+          "maven.source.folder": [
+            "src/main/java"
+          ],
+          "git.repository.remotes": [
+            "https://github.com/exo-addons/task.git"
+          ],
+          "maven.groupId": [
+            "org.exoplatform.addons.task"
+          ],
+          "containsJavaFiles": [
+            "true"
+          ],
+          "maven.packaging": [
+            "pom"
+          ],
+          "vcs.provider.name": [
+            "git"
+          ],
+          "maven.resource.folder": [
+            "src/main/resources",
+            "src/test/resources"
+          ],
+          "git.current.branch.name": [
+            "develop"
+          ],
+          "maven.parent.artifactId": [
+            "addons-parent-pom"
+          ]
+        },
+        "type": "maven",
+        "source": {
+          "location": "https://github.com/exo-addons/task.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/task",
+        "problems": [],
+        "mixins": [
+          "git"
+        ]
+      }
+    ],
+    "name": "exo-addon-che",
+    "commands": [
+      {
+        "commandLine": "/opt/exo/current/addon install --catalog=file:///etc/exo/catalog.json  exo-tasks:1.1.x-SNAPSHOT --force --batch-mode",
+        "name": "Task - Deploy",
+        "attributes": {
+          "previewUrl": "http://${server.port.8080}/portal/intranet/tasks"
+        },
+        "type": "custom"
+      },
+      {
+        "commandLine": "mvn -f ${current.project.path} clean package",
+        "name": "build",
+        "attributes": {
+          "previewUrl": "http://${server.port.8080}/portal"
+        },
+        "type": "mvn"
+      },
+      {
+        "commandLine": "rm -rf /srv/exo/* && echo \"PLF instance cleaned!\"",
+        "name": "eXo PLF - Clean",
+        "attributes": {
+          "previewUrl": ""
+        },
+        "type": "custom"
+      },
+      {
+        "commandLine": "/opt/exo/current/start_eXo.sh --dev -b",
+        "name": "eXo PLF - Start",
+        "attributes": {
+          "previewUrl": "http://${server.port.8080}/portal"
+        },
+        "type": "custom"
+      },
+      {
+        "commandLine": "tail -100f /opt/exo/current/logs/platform.log  ",
+        "name": "eXo PLF  -  Logs",
+        "attributes": {
+          "previewUrl": "http://${server.port.8080}/portal"
+        },
+        "type": "custom"
+      },
+      {
+        "commandLine": "rm -f /opt/exo/current/addons/archives/*.zip  && mvn -f   ${current.project.path} clean package -DskipTests && /opt/exo/current/addon install --catalog=file:///etc/exo/catalog.json  exo-tasks:1.1.x-SNAPSHOT --force --batch-mode &&  /opt/exo/current/start_eXo.sh --dev -b",
+        "name": "Task - Build/Install & Start PLF",
+        "attributes": {
+          "previewUrl": "http://${server.port.8080}/portal"
+        },
+        "type": "custom"
+      },
+      {
+        "commandLine": "/opt/exo/current/stop_eXo.sh -force && echo \"eXo PLF Stopped!\"",
+        "name": "eXo PLF - Stop",
+        "attributes": {
+          "previewUrl": ""
+        },
+        "type": "custom"
+      }
+    ],
+    "links": []
+  },
+  "links": [
+    {
+      "href": "http://192.168.28.30:8080/ide/api/workspace/workspacedp4p0xtj1swdjmf4",
+      "parameters": [],
+      "rel": "self link",
+      "method": "GET"
+    },
+    {
+      "href": "http://192.168.28.30:8080/ide/api/workspace/workspacedp4p0xtj1swdjmf4/runtime",
+      "parameters": [],
+      "rel": "start workspace",
+      "method": "POST",
+      "produces": "application/json"
+    },
+    {
+      "href": "http://192.168.28.30:8080/ide/api/workspace/workspacedp4p0xtj1swdjmf4",
+      "parameters": [],
+      "rel": "remove workspace",
+      "method": "DELETE",
+      "produces": "application/json"
+    },
+    {
+      "href": "http://192.168.28.30:8080/ide/api/workspace",
+      "parameters": [],
+      "rel": "get all user workspaces",
+      "method": "GET",
+      "produces": "application/json"
+    },
+    {
+      "href": "http://192.168.28.30:8080/ide/api/workspace/workspacedp4p0xtj1swdjmf4/snapshot",
+      "parameters": [],
+      "rel": "get workspace snapshot",
+      "method": "GET",
+      "produces": "application/json"
+    },
+    {
+      "href": "http://192.168.28.30:8080/ide/exo-addon-che",
+      "parameters": [],
+      "rel": "ide url",
+      "method": "GET",
+      "produces": "text/html"
+    },
+    {
+      "href": "ws://192.168.28.30:8080/ide/api/ws/workspacedp4p0xtj1swdjmf4",
+      "parameters": [
+        {
+          "required": true,
+          "name": "channel",
+          "valid": [],
+          "defaultValue": "workspace:workspacedp4p0xtj1swdjmf4"
+        }
+      ],
+      "rel": "get workspace events channel",
+      "method": "GET"
+    }
+  ]
+}
