@@ -24,6 +24,7 @@ $ open http://192.168.28.30:8080
 . Select +Import an existing workspace configuration+ option
 . Copy/paste content from {uri-task-workspace}[che-workspace.json]
 . Click on +Create Workspace+ button
+. Then Click on the RUN button
 
 ==== By only using Dockerfile
 

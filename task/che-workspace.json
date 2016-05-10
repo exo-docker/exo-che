@@ -17,7 +17,7 @@
         "owner": "che",
         "runtime": {
           "properties": {
-            "hostConfig.binds": "[/home/vagrant/eclipse-che-4.2.0/lib/linux_amd64/terminal:/mnt/che/terminal:ro,Z, /home/vagrant/eclipse-che-4.2.0/lib/ws-agent.zip:/mnt/che/ws-agent.zip:ro,Z, /home/vagrant/eclipse-che-4.2.0/workspaces/exo-addon-che:/projects:Z]",
+            "hostConfig.binds": "[/home/vagrant/eclipse-che-4.2.0/lib/linux_amd64/terminal:/mnt/che/terminal:ro,Z, /home/vagrant/eclipse-che-4.2.0/lib/ws-agent.zip:/mnt/che/ws-agent.zip:ro,Z, /home/vagrant/eclipse-che-4.2.0/workspaces/exo-task-che:/projects:Z]",
             "hostConfig.dnsSearch": "[]",
             "network.bridge": "",
             "hostConfig.volumesFrom": "[]",
@@ -198,7 +198,7 @@
       "owner": "che",
       "runtime": {
         "properties": {
-          "hostConfig.binds": "[/home/vagrant/eclipse-che-4.2.0/lib/linux_amd64/terminal:/mnt/che/terminal:ro,Z, /home/vagrant/eclipse-che-4.2.0/lib/ws-agent.zip:/mnt/che/ws-agent.zip:ro,Z, /home/vagrant/eclipse-che-4.2.0/workspaces/exo-addon-che:/projects:Z]",
+          "hostConfig.binds": "[/home/vagrant/eclipse-che-4.2.0/lib/linux_amd64/terminal:/mnt/che/terminal:ro,Z, /home/vagrant/eclipse-che-4.2.0/lib/ws-agent.zip:/mnt/che/ws-agent.zip:ro,Z, /home/vagrant/eclipse-che-4.2.0/workspaces/exo-task-che:/projects:Z]",
           "hostConfig.dnsSearch": "[]",
           "network.bridge": "",
           "hostConfig.volumesFrom": "[]",
@@ -509,7 +509,7 @@
         ]
       }
     ],
-    "name": "exo-addon-che",
+    "name": "exo-task-che",
     "commands": [
       {
         "commandLine": "rm -f /opt/exo/current/addons/archives/task*.zip  && mvn -f /projects/task clean package -DskipTests && /opt/exo/current/addon install --catalog=file:///etc/exo/catalog.json  exo-tasks:1.1.x-SNAPSHOT --force --batch-mode",
@@ -614,7 +614,7 @@
       "produces": "application/json"
     },
     {
-      "href": "http://192.168.28.30:8080/ide/exo-addon-che",
+      "href": "http://192.168.28.30:8080/ide/exo-task-che",
       "parameters": [],
       "rel": "ide url",
       "method": "GET",
