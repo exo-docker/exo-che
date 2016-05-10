@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings
+  xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <mirrors>
+    <mirror>
+      <id>exo-mirror</id>
+      <mirrorOf>external:*</mirrorOf>
+      <url>https://repository.exoplatform.org/public</url>
+    </mirror>
+  </mirrors>
+  <profiles>
+    <profile>
+      <id>exo-central</id>
+      <!-- This "hack" change the behavior of maven to let it use our public mirror
+      as the central repository (with snapshots activation).
+      The URL is never used and is overrided by the mirror entry.
+      -->
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>http://fake</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <url>http://fake</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+    <!-- This profile is always activated and let you define properties for dependent environment stuffs -->
+    <profile>
+      <id>local-properties</id>
+      <properties>
+      </properties>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <!-- make these profiles active all the time -->
+    <activeProfile>exo-central</activeProfile>
+    <activeProfile>local-properties</activeProfile>
+  </activeProfiles>
+</settings>
