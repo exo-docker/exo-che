@@ -178,7 +178,7 @@
           "name": "ws-machine",
           "type": "docker",
           "source": {
-            "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/base-che/Dockerfile",
+            "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/task/Dockerfile",
             "type": "dockerfile"
           },
           "dev": true,
@@ -359,7 +359,7 @@
         "name": "ws-machine",
         "type": "docker",
         "source": {
-          "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/base-che/Dockerfile",
+          "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/task/Dockerfile",
           "type": "dockerfile"
         },
         "dev": true,
@@ -403,7 +403,7 @@
             "name": "ws-machine",
             "type": "docker",
             "source": {
-              "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/base-che/Dockerfile",
+              "location": "https://raw.githubusercontent.com/exo-docker/exo-che/master/task/Dockerfile",
               "type": "dockerfile"
             },
             "dev": true,
