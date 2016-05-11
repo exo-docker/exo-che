@@ -544,7 +544,7 @@
         "type": "custom"
       },
       {
-        "commandLine": "/opt/exo/current/start_eXo.sh --dev -b",
+        "commandLine": "/opt/exo/current/start_eXo.sh --dev -b && tail -300f /opt/exo/current/logs/platform.log",
         "name": "eXo PLF - Start",
         "attributes": {
           "previewUrl": "http://${server.port.8080}/portal"
@@ -568,7 +568,7 @@
         "type": "custom"
       },
       {
-        "commandLine": "/opt/exo/current/stop_eXo.sh 15 -force && echo \"eXo PLF Stopped!\"",
+        "commandLine": "/opt/exo/current/stop_eXo.sh 20 -force && echo \"eXo PLF Stopped!\"",
         "name": "eXo PLF - Stop",
         "attributes": {
           "previewUrl": ""
