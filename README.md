@@ -16,6 +16,8 @@ This repository contains all resources needed to develop a eXo Add-on with Che:
  * a **catalog.json** file used by Che custom commands
  * a **che-workspace.json** file to init a ready-to-work worskpace with this add-on
 
+ ![eXo Tasks / Che Development](https://raw.githubusercontent.com/exo-docker/exo-che/master/doc/images/exo-tasks-with-che.png)
+
 ## Read the following documentation to know more about Che and eXo Platform
 
 * [How to run Che Server with eXo Tasks locally](./doc#install-che)
