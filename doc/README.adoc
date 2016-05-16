@@ -1,0 +1,36 @@
+= eXo Development with Che
+// URIs:
+:uri-project-repo: https://github.com/exo-docker/exo-che
+:repo-base-uri: {uri-project-repo}/blob/master/
+ifdef::env-github[:repo-base-uri: link:]
+:uri-task-workspace: {repo-base-uri}/task/che-workspace.json
+
+== Getting started
+
+=== Install Che
+
+[source, shell]
+--
+$ git clone https://github.com/eclipse/che.git && cd che
+$ vagrant up --provider virtualbox
+$ open http://192.168.28.30:8080
+--
+
+=== Configure eXo Development Workspace
+
+. Go to +New Workspace+ http://192.168.28.30:8080/dashboard/#/create-workspace
+. Select +Import an existing workspace configuration+ option
+. Copy/paste content from {uri-task-workspace}[che-workspace.json]
+. Click on +Create Workspace+ button
+. Then Click on the RUN button
+
+== Contribute
+
+=== Add configuration for another Add-on
+
+You just have to create a Pull Request with the following files:
+
+. Create a new folder, for example +my-addon+
+. Create a *+catalog.json+* file with informations relative to your add-on +
+. Create a Dockerfile based on the official *exoplatform/che* image and add the custom catalog.json
+. Create a che-workspace.json file with the Add-on configuration (GitHub URL, update custom commands...)
