@@ -568,7 +568,7 @@
         "type": "custom"
       },
       {
-        "commandLine": "/opt/exo/current/stop_eXo.sh 20 -force && echo \"eXo PLF Stopped!\"",
+        "commandLine": "/opt/exo/current/stop_eXo.sh 20 -force && /opt/exo/current/stop_eXo.sh 2 -force && echo \"eXo PLF Stopped!\"",
         "name": "eXo PLF - Stop",
         "attributes": {
           "previewUrl": ""
