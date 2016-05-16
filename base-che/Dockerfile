@@ -36,6 +36,12 @@ RUN mkdir -p /home/${EXO_USER}/.m2/repository && chown ${EXO_USER}:${EXO_USER} /
 
 USER ${EXO_USER}
 
+# Init .m2 local repository with artifacts used for PLF and Add-ons developement
+RUN  git clone https://github.com/exoplatform/task.git /home/${EXO_USER}/tmp && \
+     mvn -f /home/${EXO_USER}/tmp/ dependency:resolve && \
+     for x in `find "/home/${EXO_USER}/.m2/repository" -name '*-SNAPSHOT*'`; do rm -rf "$x"; done && \
+     rm -rf /home/${EXO_USER}/tmp
+
 EXPOSE 4403 8000 8080 9876 22
 
 # CMD for Che Server
