@@ -560,7 +560,7 @@
         "type": "custom"
       },
       {
-        "commandLine": "rm -f /opt/exo/current/addons/archives/task*.zip  && mvn -f /projects/task clean package -DskipTests && /opt/exo/current/addon install --catalog=file:///etc/exo/catalog.json  exo-tasks:1.2.x-SNAPSHOT --force --batch-mode &&  /opt/exo/current/start_eXo.sh --dev -b",
+        "commandLine": "rm -f /opt/exo/current/addons/archives/task*.zip  && mvn -f /projects/task clean package -DskipTests && /opt/exo/current/addon install --catalog=file:///etc/exo/catalog.json  exo-tasks:1.2.x-SNAPSHOT --force --batch-mode &&  /opt/exo/current/start_eXo.sh --dev -b && tail -100f /opt/exo/current/logs/platform.log",
         "name": "Task - Build & Install & Start PLF",
         "attributes": {
           "previewUrl": "http://${server.port.8080}/portal"
