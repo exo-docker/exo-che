@@ -38,8 +38,7 @@ USER ${EXO_USER}
 
 # Init .m2 local repository with artifacts used for PLF and Add-ons developement
 RUN  git clone https://github.com/exoplatform/task.git /home/${EXO_USER}/tmp && \
-     mvn -f /home/${EXO_USER}/tmp/ dependency:resolve && \
-     mvn -f /home/${EXO_USER}/tmp/ dependency:resolve-plugins && \
+     mvn -f /home/${EXO_USER}/tmp/ install -DskipTests && \
      for x in `find "/home/${EXO_USER}/.m2/repository" -name '*-SNAPSHOT*'`; do rm -rf "$x"; done && \
      rm -rf /home/${EXO_USER}/tmp
 
